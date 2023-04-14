@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #025358;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.form {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form .title {
+  text-align: center;
+  font-size: 25px;
+  color: #025358;
+  font-weight: bold;
+}
+
+.form .steps {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.form .steps .step {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  border: 3px solid #025358;
+  color: #025358;
+  font-weight: 500;
+}
+
+.form .steps .step.active {
+  background-color: #025358;
   color: white;
+  outline: 2px solid #025358;
+  border: 3px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.form .steps .line {
+  flex-grow: 1;
+  background-color: #025358;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form .pages {
+  display: flex;
+  padding: 15px;
+  width: 600px;
+  height: 400px;
+}
+
+.form .pages .page {
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  display: none;
+}
+
+.form .pages .page.active {
+  display: flex;
+}
+
+.form .pages .page.one {
+  background-color: aqua;
+}
+
+.form .pages .page.two {
+  background-color: plum;
+}
+
+.form .pages .page button {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #025358;
+  border: #025358;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px;
 }
