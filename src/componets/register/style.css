@@ -1,0 +1,76 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #025358;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form .title {
+    text-align: center;
+    font-size: 25px;
+    color: #025358;
+    font-weight: bold;
+}
+
+.form .steps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.form .steps .step {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #025358;
+    color: #025358;
+    font-weight: 500;
+}
+
+.form .steps .step.active {
+    background-color: #025358;
+    color: white;
+    outline: 2px solid #025358;
+    border: 3px solid white;
+}
+
+.form .steps .line {
+    flex-grow: 1;
+    background-color: #025358;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.form .pages {
+    display: flex;
+    padding: 15px;
+    width: 400px;
+    height: 300px;
+}
+
+.form .pages .page {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+    flex-direction: column;
+}
+
+.form .pages .page.active {
+    display: flex;
+}
