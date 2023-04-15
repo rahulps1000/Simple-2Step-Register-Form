@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Simple 2 Step Registration Form
+
+This is a simple 2 step registreation form on react js.
+
+## Screenshots
+
+![Step1](https://github.com/[rahulps1000]/[Simple-2Step-Register-Form]/blob/[main]/screenshots/step1.png?raw=true)
+
+![Step2](https://github.com/[rahulps1000]/[Simple-2Step-Register-Form]/blob/[main]/screenshots/step2.png?raw=true)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
