@@ -4,9 +4,9 @@ This is a simple 2 step registreation form on react js.
 
 ## Screenshots
 
-![Step1](https://github.com/[rahulps1000]/[Simple-2Step-Register-Form]/blob/[main]/screenshots/step1.png?raw=true)
+![Step1](https://raw.githubusercontent.com/rahulps1000/Simple-2Step-Register-Form/master/screenshots/step1.png)
 
-![Step2](https://github.com/[rahulps1000]/[Simple-2Step-Register-Form]/blob/[main]/screenshots/step2.png?raw=true)
+![Step2](https://raw.githubusercontent.com/rahulps1000/Simple-2Step-Register-Form/master/screenshots/step2.png)
 
 ## Getting Started with Create React App
 
