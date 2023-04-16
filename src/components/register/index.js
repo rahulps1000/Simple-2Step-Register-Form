@@ -31,7 +31,7 @@ function Register() {
           <div className={`page one ${page === 1 && "active"}`}>
             <TextBox type="text" placeholder="Username" />
             <TextBox type="email" placeholder="Email" />
-            <TextBox type="number" placeholder="Mobile Number" />
+            <TextBox type="phone" placeholder="Mobile Number" />
             <TextBox type="password" placeholder="Password" />
             <Button onClick={() => setPage(2)}>Continue</Button>
           </div>
@@ -47,7 +47,7 @@ function Register() {
                 </option>
               ))}
             </SelectBox>
-            <SelectBox placeholder={"District"}>
+            <SelectBox placeholder={"District"} errorText="errText">
               {state &&
                 districtsInState[state].map((district, index) => (
                   <option key={index} value={district}>
@@ -55,7 +55,7 @@ function Register() {
                   </option>
                 ))}
             </SelectBox>
-            <TextBox type="number" placeholder="Pin Code" />
+            <TextBox type="number" placeholder="Pin Code" errorText="errText" />
             <Button onClick={() => {}}>Register</Button>
           </div>
         </div>

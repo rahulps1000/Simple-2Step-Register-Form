@@ -1,62 +1,52 @@
-.textbox{
+.selectbox,
+.textbox {
     display: flex;
     flex-direction: column;
     min-width: 230px;
-    width: 70%;
+    width: 70%
 }
 
+.selectbox select,
 .textbox input {
     font-size: 18px;
     padding: 8px 10px;
     border: 2px solid grey;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 .textbox input:focus {
-    border: 2px solid #025358;
+    border: 2px solid #025358
 }
 
-.textbox input:has(+ span),
-.selectbox select:has(+ span){
-    border: 2px solid red;
+.selectbox select:has(+ span),
+.textbox input:has(+ span) {
+    border: 2px solid red
 }
 
-.textbox span,
-.selectbox span {
+.selectbox span,
+.textbox span {
     color: red;
     font-size: 16px;
-}
-
-.selectbox {
-    display: flex;
-    flex-direction: column;
-    min-width: 230px;
-    width: 70%;
-}
-
-.selectbox select {
-    font-size: 18px;
-    padding: 8px 10px;
-    border: 2px solid grey;
-    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px
 }
 
 .selectbox select:has(option[value=""][disabled]:checked) {
-    color: gray;
+    color: gray
 }
 
 .selectbox select option {
-    color: black;
+    color: #000
 }
 
 .button button {
     font-size: 20px;
-    color: white;
+    color: #fff;
     background-color: #025358;
     border: 1px solid #025358;
     cursor: pointer;
     border-radius: 5px;
     margin: 10px;
     width: 300px;
-    height: 40px;
+    height: 40px
 }
