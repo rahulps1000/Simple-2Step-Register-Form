@@ -16,11 +16,13 @@
     border: 2px solid #025358;
 }
 
-.textbox input:has(+ span){
+.textbox input:has(+ span),
+.selectbox select:has(+ span){
     border: 2px solid red;
 }
 
-.textbox span {
+.textbox span,
+.selectbox span {
     color: red;
     font-size: 16px;
 }

@@ -1,7 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-function SelectBox({ children, onChange = (e) => {}, value, placeholder }) {
+function SelectBox({
+  children,
+  onChange = (e) => {},
+  value,
+  placeholder,
+  errorText,
+}) {
   const [state, setState] = useState(value);
   const _onChange = (e) => {
     onChange(e);
@@ -17,6 +23,7 @@ function SelectBox({ children, onChange = (e) => {}, value, placeholder }) {
         )}
         {children}
       </select>
+      {errorText && <span>{errorText}</span>}
     </div>
   );
 }

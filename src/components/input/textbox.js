@@ -6,6 +6,8 @@ function TextBox({
   required = false,
   errorText = "",
   ref = null,
+  onChange = (e) => {},
+  value,
 }) {
   return (
     <div className="textbox">
@@ -14,6 +16,8 @@ function TextBox({
         placeholder={placeholder}
         required={required}
         ref={ref}
+        onChange={onChange}
+        defaultValue={value}
       />
       {errorText && <span>{errorText}</span>}
     </div>
